@@ -1,15 +1,29 @@
 # GlobalAIHub Python Introduction Homework3
 
+dictionary = [
+    "secret",
+    "apple",
+    "school",
+    "homework",
+    "python",
+    "globalaihub",
+    "turkishaihub",
+]
 name = str(input("What is your name? : "))
-print("\nHello {}!".format(name) + " Let's build a dictionary first for the Hangman!")
-count = int(input("\nHow many words would like to enter into the dictionary? : "))
-
-n = 1
-dictionary = []
-while n <= count:
-    dictionary.append(str(input("Please enter the word {} : ".format(n))))
-    n += 1
-print("\nOur dictionary is ready, let's start the game!")
+choice = str(
+    input(
+        "\nHello {}!".format(name)
+        + " Would you like to add some new words to the Hangman dictionary (y/n)? : "
+    )
+)
+if choice == "y" or choice == "Y":
+    count = int(input("\nHow many words would like to enter into the dictionary? : "))
+    n = 1
+    while n <= count:
+        dictionary.append(str(input("Please enter the word {} : ".format(n))))
+        n += 1
+else:
+    print("\nAlright! Let's start the game!")
 
 import random as rnd
 
