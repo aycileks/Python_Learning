@@ -48,8 +48,6 @@ while chan <= 7:
         guess = guess + letter
         ordered_guess = sorted(guess)
         check.append(letter)
-        print(ordered_guess)
-        print(ordered_word)
         if ordered_guess == ordered_word:
             print("\nYou won! The secret word was :" + word)
             exit(0)
