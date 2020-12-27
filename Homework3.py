@@ -8,6 +8,14 @@ dictionary = [
     "python",
     "globalaihub",
     "turkishaihub",
+    "Ankara",
+    "Izmir",
+    "Istanbul",
+    "Gaziantep",
+    "Washington",
+    "Berlin",
+    "Dusseldorf",
+    "Brussels",
 ]
 name = str(input("What is your name? : "))
 choice = str(
